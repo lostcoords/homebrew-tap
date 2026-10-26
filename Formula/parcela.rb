@@ -7,23 +7,23 @@ class Parcela < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lostcoords/parcela/releases/download/v0.6.0/parcela-aarch64-apple-darwin.tar.gz"
-      sha256 "0ab4fe544d88862a1e2eea8fb4f162c8afe2bfb0828223125693ae7d3571da5f"
+      url "https://github.com/lostcoords/parcela/releases/download/v0.7.0/parcela-aarch64-apple-darwin.tar.gz"
+      sha256 "75c268cc79add54cb38822f58b69ebbe6813f59a049dc946e3ac4644c9b4f105"
     end
     on_intel do
-      url "https://github.com/lostcoords/parcela/releases/download/v0.6.0/parcela-x86_64-apple-darwin.tar.gz"
-      sha256 "31365fa60797ca2ec63d08e65d99beffb770921142803542741fb71e1d6a06c3"
+      url "https://github.com/lostcoords/parcela/releases/download/v0.7.0/parcela-x86_64-apple-darwin.tar.gz"
+      sha256 "6ee56f73b3786c44de4869a2645cc62a82bd4c7edb375ee846e81ee3a9ef88b6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lostcoords/parcela/releases/download/v0.6.0/parcela-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7be11fea1272197e7ce000b52051d518ea735b2967557937c5b3dcf7599a93a9"
+      url "https://github.com/lostcoords/parcela/releases/download/v0.7.0/parcela-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c4be96febcaa65beba4aaa632b9985d178e91745a23b5db3f7e7048b3f97cab8"
     end
     on_intel do
-      url "https://github.com/lostcoords/parcela/releases/download/v0.6.0/parcela-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b4b5fc63aa62822a96b95d2391e8454dcbc084075ced9c8f77ede69bf6592f21"
+      url "https://github.com/lostcoords/parcela/releases/download/v0.7.0/parcela-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ff0e3a7649b1202235ebb7ad71e6a343096e78c84fd82ddd7b0a04b51d4667a7"
     end
   end
 
