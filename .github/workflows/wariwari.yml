@@ -1,0 +1,37 @@
+name: wariwari
+# Keeps Formula/wariwari.rb on the latest lostcoords/wariwari-cli release.
+# The tap pulls instead of the CLI pushing, so no cross-repo token is needed.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wariwari
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate the formula from the latest release
+        run: |
+          tag=$(gh release view -R lostcoords/wariwari-cli --json tagName --jq .tagName)
+          curl -fsSL "https://raw.githubusercontent.com/lostcoords/wariwari-cli/$tag/scripts/homebrew-formula.sh" \
+            | sh -s -- "${tag#v}" > Formula/wariwari.rb.new
+          mv Formula/wariwari.rb.new Formula/wariwari.rb
+          git add Formula/wariwari.rb
+          if git diff --cached --quiet; then
+            echo "Formula already at $tag"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "wariwari ${tag#v}"
+          git push
