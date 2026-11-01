@@ -5,23 +5,23 @@ class Wariwari < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.1.1/wariwari_0.1.1_darwin_arm64.tar.gz"
-      sha256 "2ad8d334a49bbb01a1b0f83db16e63d9a254929e5530bfd54419a099dc79d37d"
+      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.2.0/wariwari_0.2.0_darwin_arm64.tar.gz"
+      sha256 "4a35d6b93405727177732aa0829d5360e8b55a874c154c40801255acc361dfa0"
     end
     on_intel do
-      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.1.1/wariwari_0.1.1_darwin_amd64.tar.gz"
-      sha256 "0c2ac2980bef758acb4cd347d332a4873a0d325fcde50b55d63a58b307948546"
+      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.2.0/wariwari_0.2.0_darwin_amd64.tar.gz"
+      sha256 "84c25c68ab6f07be63b766e06af7443c58ebca7fae89e36d958a26d9791a9134"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.1.1/wariwari_0.1.1_linux_arm64.tar.gz"
-      sha256 "68effd2ab36e65216f8ea393fe9c28845aad8d902b4f11da45a8729a9bfca66a"
+      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.2.0/wariwari_0.2.0_linux_arm64.tar.gz"
+      sha256 "12775aaf8874b3cb4e039e546a195c5d2228c8929a11b44d390efc33628f4c2c"
     end
     on_intel do
-      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.1.1/wariwari_0.1.1_linux_amd64.tar.gz"
-      sha256 "58b9210db2cc5f63d5224e911cfd93202781af46577960639b5de3b3ee9a02f6"
+      url "https://github.com/lostcoords/wariwari-cli/releases/download/v0.2.0/wariwari_0.2.0_linux_amd64.tar.gz"
+      sha256 "8bf20ab9a9ace6475ef4d3b748f7d5c7fe0f2832caf2031755a8aaafeccd432c"
     end
   end
 
